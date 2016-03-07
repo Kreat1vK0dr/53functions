@@ -1,5 +1,5 @@
-// module.exports = function (sentence) {
-var sentence = "This is whatever is takes to be okay";
+module.exports = function (sentence) {
+// var sentence = "This is whatever is takes to be okay";
   var words = sentence.split(" ").map(function(word){
     return {
       word : word,
@@ -9,8 +9,8 @@ var sentence = "This is whatever is takes to be okay";
     var longestWord = words.reduce(function(a,b) {
     return (a.length < b.length) ? b : a;
   });
-//   return longestWord;
-// };
+  return longestWord;
+};
 
-  console.log(words);
+  // console.log(words);
   // console.log(longestWord);
